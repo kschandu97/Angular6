@@ -1,0 +1,23 @@
+<h1>Add Employee..</h1>
+
+<table border='1'>
+    <tr>
+        <td>Employee id</td>
+        <td><input type="text" [(ngModel)]="empid"/></td>
+    </tr>
+    <tr>
+        <td>Employee name</td>
+        <td><input type="text" [(ngModel)]="empname"/></td>
+    </tr>
+    <tr>
+        <td>Employee salary</td>
+        <td><input type="text" [(ngModel)]="empsalary"/></td>
+    </tr>
+    <tr>
+        <td>Employee dept</td>
+        <td><input type="text" [(ngModel)]="empdept"/></td>
+    </tr>
+    <tr>
+<input type="button" value="add" (click)=addEmp()/>
+</tr>
+</table>
