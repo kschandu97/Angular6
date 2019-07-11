@@ -1,0 +1,28 @@
+<table border="3" matSort (matSortChange)="sortData($event)">
+    <tr style="color:blueviolet">
+        <th mat-sort-header="id"><u>ID</u></th>
+        <th mat-sort-header="name"><u>NAME</u></th>
+        <th mat-sort-header="salary"><u>SALARY</u></th>
+        <th mat-sort-header="department"><u>DEPARTMENT</u></th>
+        <th mat-sort-header="date"><u>JOINING DATE</u></th>
+
+    </tr>
+    <tr *ngFor="let data of sortedData">
+        <td style="background-color:brown">
+            {{data.id}}
+        </td>
+        <td>
+                 {{data.name}}
+           </td>
+
+            <td>
+                    {{data.salary}}
+                </td>
+                <td>
+                    {{data.department}}
+                </td>
+                <td>
+                    {{data.date}}
+                </td>
+     </tr>
+</table>
